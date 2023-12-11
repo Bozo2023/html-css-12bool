@@ -183,7 +183,7 @@ color: aliceblue;
     grid-row: 16/17;
 }
 
-/* BONUS II */
+/* BONUS II 
 .start-xs {
     justify-content: flex-start;
     text-align: start;
@@ -218,11 +218,11 @@ color: aliceblue;
 .between-xs {
     justify-content: space-between;
 }
-
+*/
 /* Fine BONUS II */
 
 
-/* BONUS I */
+/* BONUS I 
 .row.reverse {
     flex-direction: row-reverse;
 }
@@ -240,3 +240,4 @@ color: aliceblue;
 }
 
 /* Fine BONUS I */
+
