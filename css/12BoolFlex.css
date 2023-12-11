@@ -20,8 +20,8 @@
     display: grid;
     grid-template-columns: repeat(14,40px);
     grid-auto-rows: minmax(40px,auto);
-    background-color: blueviolet;
-    gap:5px;
+    background-color: grey;
+    gap:1px;
 }
 
 [class*="col-"] {
@@ -33,117 +33,155 @@
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
+
+}
+.box{
+color: aliceblue;
 }
 
 .col-xs-1 {
-    flex-basis: calc((100% / 12) * 1);
-    max-width: calc((100% / 12) * 1);
-    background: greenyellow;
+    background: black;
     grid-column: 3/5;
-    grid-row: 3/5;
+    grid-row: 1/2;
+    
 }
 
 .col-xs-2 {
-    flex-basis: calc((100% / 12) * 2);
-    max-width: calc((100% / 12) * 2);
-    background: yellowgreen;
+   
+    background: black;
     grid-column: 11/13;
 }
 
 .col-xs-3 {
-    flex-basis: calc((100% / 12) * 3);
-    max-width: calc((100% / 12) * 3);
+   
+    grid-column: 2/3;
+    grid-row: 2/8;
+    background: black;
 }
 
 .col-xs-4 {
-    flex-basis: calc((100% / 12) * 4);
-    max-width: calc((100% / 12) * 4);
+    grid-column: 5/11;
+    background: black;
 }
 
 .col-xs-5 {
-    flex-basis: calc((100% / 12) * 5);
-    max-width: calc((100% / 12) * 5);
+    grid-column: 13/14;
+    grid-row: 2/8;
+    background: black;
+
 }
 
 .col-xs-6 {
-    flex-basis: calc((100% / 12) * 6);
-    max-width: calc((100% / 12) * 6);
+    background-color: pink;
+    grid-column: 5/11;
+    grid-row: 4/5;
 }
 
 .col-xs-7 {
-    flex-basis: calc((100% / 12) * 7);
-    max-width: calc((100% / 12) * 7);
+    background-color: pink;
+    grid-column: 4/12;
+    grid-row: 5/7;
+    
 }
 
 .col-xs-8 {
-    flex-basis: calc((100% / 12) * 8);
-    max-width: calc((100% / 12) * 8);
+    background-color: pink;
+    grid-column: 5/11;
+    grid-row: 7/8;
 }
 
 .col-xs-9 {
-    flex-basis: calc((100% / 12) * 9);
-    max-width: calc((100% / 12) * 9);
+    background-color: black;
+    grid-column: 5/6;
+    grid-row: 5/7;
 }
 
 .col-xs-10 {
-    flex-basis: calc((100% / 12) * 10);
-    max-width: calc((100% / 12) * 10);
+    background-color: black;
+    grid-column: 10/11;
+    grid-row:5/7 ;
 }
 
 .col-xs-11 {
-    flex-basis: calc((100% / 12) * 11);
-    max-width: calc((100% / 12) * 11);
+    background-color: black;
+    grid-column: 1/2;
+    grid-row: 8/12;
 }
 
 .col-xs-12 {
-    flex-basis: calc((100% / 12) * 12);
-    max-width: calc((100% / 12) * 12);
+    background-color: greenyellow;
+    grid-column: 2/4;
+    grid-row: 8/11;
 }
 
-.col-xs-offset-1 {
-    margin-left: calc((100% / 12) * 1);
+.col-xs-13 {
+    background-color: pink;
+    grid-column:2/3 ;
+    grid-row: 9/12;
+}
+    
+
+.col-xs-14 {
+    background-color: lightblue;
+    grid-column:4/12 ;
+    grid-row: 10/11; 
 }
 
-.col-xs-offset-2 {
-    margin-left: calc((100% / 12) * 2);
+.col-xs-15 {
+    background-color:greenyellow;
+    grid-column:12/14 ;
+    grid-row: 8/11; 
 }
 
-.col-xs-offset-3 {
-    margin-left: calc((100% / 12) * 3);
+.col-xs-16 {
+    background-color:pink;
+    grid-column:13/14 ;
+    grid-row: 9/12; 
+}
+.col-xs-17 {
+    background-color:black;
+    grid-column:14/15 ;
+    grid-row: 8/12; 
 }
 
-.col-xs-offset-4 {
-    margin-left: calc((100% / 12) * 4);
+.col-xs-18 {
+    background-color:lightskyblue;
+    grid-column:3/13 ;
+    grid-row: 11/13; 
+}
+.col-xs-19 {
+    background-color:black;
+    grid-column:2/3 ;
+    grid-row: 12/16; 
 }
 
-.col-xs-offset-5 {
-    margin-left: calc((100% / 12) * 5);
+.col-xs-20{
+    background-color:blue;
+    grid-column:3/13 ;
+    grid-row: 13/16;
 }
 
-.col-xs-offset-6 {
-    margin-left: calc((100% / 12) * 6);
+.col-xs-21{
+    background-color:black;
+    grid-column:6/10 ;
+    grid-row: 15/16;
 }
 
-.col-xs-offset-7 {
-    margin-left: calc((100% / 12) * 7);
+.col-xs-22{
+    background-color:black;
+    grid-column:13/14 ;
+    grid-row: 12/16;
 }
-
-.col-xs-offset-8 {
-    margin-left: calc((100% / 12) * 8);
+.col-xs-23{
+    background-color:black;
+    grid-column:3/6;
+    grid-row: 16/17;
 }
-
-.col-xs-offset-9 {
-    margin-left: calc((100% / 12) * 9);
+.col-xs-24{
+    background-color:black;
+    grid-column:13/10 ;
+    grid-row: 16/17;
 }
-
-.col-xs-offset-10 {
-    margin-left: calc((100% / 12) * 10);
-}
-
-.col-xs-offset-11 {
-    margin-left: calc((100% / 12) * 11);
-}
-
 
 /* BONUS II */
 .start-xs {
