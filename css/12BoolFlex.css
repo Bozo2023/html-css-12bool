@@ -18,9 +18,10 @@
 
 .row {
     display: grid;
-    grid-template-columns: repeat(14,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(14,40px);
+    grid-auto-rows: minmax(40px,auto);
     background-color: blueviolet;
+    gap:5px;
 }
 
 [class*="col-"] {
@@ -39,13 +40,14 @@
     max-width: calc((100% / 12) * 1);
     background: greenyellow;
     grid-column: 3/5;
+    grid-row: 3/5;
 }
 
 .col-xs-2 {
     flex-basis: calc((100% / 12) * 2);
     max-width: calc((100% / 12) * 2);
     background: yellowgreen;
-    grid-column: /13;
+    grid-column: 11/13;
 }
 
 .col-xs-3 {
